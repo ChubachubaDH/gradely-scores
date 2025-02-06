@@ -1,4 +1,4 @@
-/* Reset some default browser styles */
+/*
 body, h1, form, ul, li {
     margin: 0;
     padding: 0;
@@ -8,18 +8,19 @@ body, h1, form, ul, li {
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.page-container {
-    width: 100%;
+.scores.container {
+    width: 40%;
     max-width: 500px;
     padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
 }
@@ -28,6 +29,38 @@ h1 {
     color: #333333;
     margin-bottom: 20px;
 }
+
+h2 {
+    color:darkgreen;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: green;
+    }
+
+.section {
+    margin-top: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+    .section:last-child {
+        border-bottom: none;
+    }
 
 .form-wrapper {
     display: flex;
@@ -102,7 +135,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Responsive Design */
 @media (max-width: 480px) {
     .page-container {
         padding: 15px;
@@ -130,14 +162,62 @@ h1 {
 }
 
 #score-header {
-    /*height: 45px;*/
     width: 1100px;
     font-size:45pt;
 }
-/*
-.scores-container {
+*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
-*/
+
+.scores-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    text-align: center;
+}
+
+h2 {
+    color: darkgreen;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: green;
+    }
+
+.section {
+    margin-top: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+    .section:last-child {
+        border-bottom: none;
+    }
+
+#score-header {
+    width: 720px;
+    font-size:45pt;
+}
