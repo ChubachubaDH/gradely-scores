@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradely - Input Scores</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="scores-container">
+        <div class="score-header">
+            <input id="score-header" type="text" placeholder="Page Header" size="100"/>
+        </div>
+
+        <div class="section">
+            <h2>Discussion</h2>
+            <input type="number" id="discussionInput" placeholder="Discussion Score" min="0" max="100" step="0.01">
+            <p>Discussion Score: <span id="discussionScore">0</span></p>
+        </div>
+
+        <div class="section">
+            <h2>Project</h2>
+            <input type="number" id="projectInput" placeholder="Project Score" min="0" max="100" step="0.01">
+            <p>Project Score: <span id="projectScore">0</span></p>
+        </div>
+
+        <div class="section">
+            <h2>Quiz</h2>
+            <button id="addQuizBtn">Add Quiz</button>
+            <div id="quizContainer"></div>
+            <p>Quiz Score: <span id="quizScore">0</span></p>
+        </div>
+
+        <div class="section">
+            <h2>Final Score</h2>
+            <p>Final Score: <span id="finalScore">0</span></p>
+        </div>
+    </div>
+    <script src="js/scores.js"></script>
+</body>
+</html>
